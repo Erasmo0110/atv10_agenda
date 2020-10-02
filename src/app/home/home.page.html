@@ -14,7 +14,27 @@
   </ion-header>
 
   <div id="container">
-    <ion-button (click)="enviar()">Clique aqui</ion-button>
-    <ion-button (click)="contato()">Contato</ion-button>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          Usuário logado: {{usuario}}
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button (click)="sair()">Sair</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button (click)="enviar()">Clique aqui</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button (click)="contato()">Contato</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
 </ion-content>
